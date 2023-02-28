@@ -5,8 +5,17 @@
 
 .pokemon
 {
-    font-size: 45px;
+    font-size: 46px;
     text-align: center;
+}
+
+:root 
+{
+    --text-light: white;
+    --text-dark: black;
+    --text-btn: white;
+    --cell-size:100px;
+    --text-selected: rgb(151, 252, 57);
 }
 
 .game
