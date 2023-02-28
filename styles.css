@@ -25,6 +25,11 @@
     align-items: center;
 }
 
+body 
+{
+    
+}
+
 .primary-btn
 {
     border: none;
@@ -34,5 +39,6 @@
     color: white;
     margin-top: 1rem;
     font-size: 1rem;
+    cursor: pointer;
 
 }
