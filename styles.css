@@ -83,3 +83,11 @@ body
     width: 120px;
     height: 110px;
 }
+
+.start-game.hide
+{
+    display: none;
+}
+
+/* Main Game Board */
+
