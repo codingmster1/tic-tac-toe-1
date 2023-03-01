@@ -33,7 +33,10 @@
 
 /* ================== Start Screen ================== */
 
-.start-game.container
+
+
+
+.container
 {
     height: 75vh;
     display: flex;
@@ -95,4 +98,15 @@ body
 {
     display: grid;
     grid-template-columns: repeat(3, auto);
+    background-color: var(--text-light);
+    row-gap: 3px;
+    column-gap: 3px;
+
+}
+
+.block 
+{
+    width:var(--cell-size);
+    height:var(--cell-size);
+    background-color: rgb(17, 236, 83);
 }
