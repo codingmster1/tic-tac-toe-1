@@ -16,7 +16,7 @@
     --text-light: white;
     --text-dark: black;
     --text-btn: white;
-    --cell-size:100px;
+    --cell-size:130px;
     --text-selected: rgb(151, 252, 57);
 
     --mudkip-img:url('smallmudkip.gif');
@@ -129,7 +129,7 @@ body
 
 .board.x .block:hover
 {
-    background:var(--torchic-img) no-repeat;
+    background:var(--treeko-img) no-repeat;
     
     
 }
