@@ -18,6 +18,16 @@
     --text-btn: white;
     --cell-size:100px;
     --text-selected: rgb(151, 252, 57);
+
+    --mudkip-img:url('smallmudkip.gif');
+    --treeko-img:url('treeko.gif');
+    --torchic-img:url('torchic.gif');
+}
+
+#img 
+{
+    width: 10px;
+    height: 5px;
 }
 
 .game
@@ -68,24 +78,26 @@ body
 
 }
 
-.primary-btn:hover
+/*.primary-btn:hover
 {
     background:var(--text-light);
     color:var(--text-dark);
-}
+}*/
 
 .start-game .profile .img > img
 {
     cursor:pointer;
 }
 
-.start-game .profile .img > img:hover
+
+
+/*.start-game .profile .img > img:hover
 {
 
     background-color: var(--text-blue);
     width: 120px;
     height: 110px;
-}
+}*/
 
 .start-game.hide
 {
@@ -108,5 +120,16 @@ body
 {
     width:var(--cell-size);
     height:var(--cell-size);
-    background-color: rgb(17, 236, 83);
+    background-color: rgb(17, 236, 152);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.board.x .block:hover
+{
+    background:var(--torchic-img) no-repeat;
+    
+    
 }
