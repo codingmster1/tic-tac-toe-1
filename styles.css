@@ -5,8 +5,9 @@
 
 .pokemon
 {
-    font-size: 46px;
+    font-size: 64px;
     text-align: center;
+    color: rgb(253, 253, 82);
 }
 
 :root 
@@ -21,21 +22,32 @@
 .game
 {
     text-align: center;
+    font-size: 35px;
+}
+
+.text-light
+{
+    font-size: 32px;
 }
 
 /* ================== Start Screen ================== */
 
 .start-game
 {
-    height: 90vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    color: rgb(248, 248, 27);
 }
 
 body 
 {
+
+    background: url('rayquaza.gif') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
 
 }
 
@@ -50,4 +62,10 @@ body
     font-size: 1rem;
     cursor: pointer;
 
+}
+
+.primary-btn:hover
+{
+    background:var(--text-light);
+    color:var(--text-dark);
 }
