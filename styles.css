@@ -33,7 +33,7 @@
 
 /* ================== Start Screen ================== */
 
-.start-game
+.start-game.container
 {
     height: 75vh;
     display: flex;
@@ -91,3 +91,8 @@ body
 
 /* Main Game Board */
 
+#board
+{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
