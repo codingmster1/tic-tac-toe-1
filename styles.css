@@ -19,7 +19,7 @@
     --cell-size:140px;
     --text-selected: rgb(151, 252, 57);
 
-    --pokemon-mudkip-img:url('ezgif.com-resize-mudkip\ \(1\).gif');
+    --mudkip-img:url('mudkip-2.gif');
     --treeko-img:url('treeko-3.gif');
     --torchic-img:url('torchic.gif');
 }
@@ -129,7 +129,7 @@ body
 
 .board.x .block:hover
 {
-    background:var(--treeko-img) no-repeat;
+    background:var(--mudkip-img) no-repeat;
     
     
 }
