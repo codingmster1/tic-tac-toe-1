@@ -20,7 +20,7 @@
     --text-selected: rgb(151, 252, 57);
 
     --pokemon-mudkip-img:url('ezgif.com-resize-mudkip\ \(1\).gif');
-    --sceptile-img:url('sceptile.gif');
+    --treeko-img:url('treeko-3.gif');
     --torchic-img:url('torchic.gif');
 }
 
@@ -78,11 +78,11 @@ body
 
 }
 
-/*.primary-btn:hover
+.primary-btn:hover
 {
     background:var(--text-light);
     color:var(--text-dark);
-}*/
+}
 
 .start-game .profile .img > img
 {
@@ -91,13 +91,13 @@ body
 
 
 
-/*.start-game .profile .img > img:hover
+.start-game .profile .img > img:hover
 {
 
     background-color: var(--text-blue);
     width: 120px;
     height: 110px;
-}*/
+}
 
 .start-game.hide
 {
@@ -129,7 +129,7 @@ body
 
 .board.x .block:hover
 {
-    background:var(--pokemon-mudkip-img) no-repeat;
+    background:var(--treeko-img) no-repeat;
     
     
 }
