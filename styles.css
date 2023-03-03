@@ -12,7 +12,7 @@
 
 :root 
 {
-    --text-blue: rgb(225, 241, 74);
+    --text-green: rgb(153, 238, 172);
     --text-light: white;
     --text-dark: black;
     --text-btn: white;
@@ -129,7 +129,11 @@ body
 
 .board.x .block:hover
 {
+    background:var(--treeko-img) no-repeat;   
+}
+
+.block.x
+{
     background:var(--treeko-img) no-repeat;
-    
-    
+    background-size: cover;
 }
