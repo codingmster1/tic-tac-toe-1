@@ -127,7 +127,7 @@ body
     cursor: pointer;
 }
 
-.board.x .block:hover
+.board.x .block:not(.x):not(.y):hover
 {
     background:var(--treeko-img) no-repeat;   
 }
@@ -135,5 +135,17 @@ body
 .block.x
 {
     background:var(--treeko-img) no-repeat;
+    background-size: cover;
+}
+
+.block.y
+{
+    background:var(--mudkip-img) no-repeat;
+    background-size: cover;
+}
+
+.block.z
+{
+    background:var(--torchic-img) no-repeat;
     background-size: cover;
 }
