@@ -3,6 +3,12 @@
     font-family: 'Press Start 2P', cursive;
 }
 
+.text-center
+{
+    text-align: center;
+    
+    margin-left: 40px;
+}
 .pokemon
 {
     font-size: 64px;
@@ -131,6 +137,34 @@ body
 {
     background:var(--treeko-img) no-repeat;   
 }
+
+.board.x .block:not(.y):not(.x):hover
+{
+    background:var(--mudkip-img) no-repeat;   
+}
+
+
+.board.x .block:not(.z):not(.x):hover
+{
+    background:var(--torchic-img) no-repeat;   
+}
+
+.board.x .block:not(.x):not(.z):hover
+{
+    background:var(--treeko-img) no-repeat;   
+}
+
+.board.x .block:not(.y):not(.z):hover
+{
+    background:var(--mudkip-img) no-repeat;   
+}
+
+.board.x .block:not(.z):not(.y):hover
+{
+    background:var(--torchic-img) no-repeat;   
+}
+
+
 
 .block.x
 {
