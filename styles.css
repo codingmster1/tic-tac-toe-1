@@ -1,20 +1,20 @@
-* 
+* > *
 {
     font-family: 'Press Start 2P', cursive;
+    box-sizing: border-box;
     
 }
 
-/*.text-center
+
+/*.start-game
 {
-    text-align: center;
-    
-    margin-left: 40px;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
 }*/
-
-.start-game
-{
-    
-}
 .pokemon
 {
     font-size: 64px;
@@ -28,11 +28,11 @@
     --text-light: white;
     --text-dark: black;
     --text-btn: white;
-    --cell-size:140px;
+    --cell-size:145px;
     --text-selected: rgb(151, 252, 57);
 
     --mudkip-img:url('mudkip-2.gif');
-    --treeko-img:url('treeko-3.gif');
+    --treeko-img:url('treecko4.jpg');
     --torchic-img:url('torchic.gif');
 }
 
@@ -60,12 +60,12 @@
 
 .container
 {
-    height: 75vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    color: rgb(248, 248, 27);
+    
 }
 
 body 
@@ -84,7 +84,7 @@ body
     padding: 10px 20px;
     border-radius: 10px;
     color: white;
-    margin-top: 1rem;
+    margin-top: 2em;
     font-size: 1rem;
     cursor: pointer;
 
@@ -107,8 +107,8 @@ body
 {
 
     background-color: var(--text-blue);
-    width: 120px;
-    height: 110px;
+    width: 220px;
+    height: 200px;
 }
 
 .start-game.hide
@@ -138,6 +138,13 @@ body
     align-items: center;
     cursor: pointer;
 }
+
+.block.x,
+.block.y,
+.block.x
+{
+    cursor: not-allowed;
+} 
 
 .board.x .block:not(.x):not(.y):hover
 {
@@ -192,9 +199,9 @@ body
 
 /*-------- Draw Message ---------*/
 
-.start-game .draw-msg
+.start-game, .draw-msg
 {
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
     bottom: 0;
@@ -203,6 +210,7 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(17, 236, 152);
+    /*background: url('sapphire2.gif') no-repeat center center fixed;*/
+    background-color:aquamarine;
     
 }
