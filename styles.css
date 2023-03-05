@@ -50,7 +50,8 @@
 
 .text-light
 {
-    font-size: 32px;
+    font-size: 37px;
+    height: 100px;
 }
 
 /* ================== Start Screen ================== */
@@ -210,7 +211,8 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*background: url('sapphire2.gif') no-repeat center center fixed;*/
-    background-color:aquamarine;
+    background: url('starterresize.gif') no-repeat center center fixed;
+    background-color:aqua;
+    
     
 }
