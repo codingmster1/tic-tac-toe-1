@@ -6,7 +6,7 @@ let GAME =
 {
     X_CLASS:"x",
     Y_CLASS:'y',
-    X_CLASS:'z',
+    Z_CLASS:'z',
 
     turn: undefined,
 
@@ -34,10 +34,12 @@ function Profile(){
             if (target == 'x' || target == 'y'){
                 GAME.X_CLASS = "x",
                 GAME.Y_CLASS = "y";
+                GAME.Y_CLASS="z";
             }
 
 
             GAME.turn = target == 'z'||target =='y'? true: false;
+           
 
 
         });
@@ -65,13 +67,20 @@ function removeImgSelection(img)
     })
 }
 
-function setHoverEffect()
-{
-    if(GAME.turn){
-        console.log("true")
+function setHoverEffect(){
+GAME.boardElement.classList.remove(GAME.X_CLASS);
+GAME.boardElement.classList.remove(GAME.Y_CLASS);
 
+
+
+
+    if(GAME.turn){
+        GAME.boardElement.classList.add(GAME.Y_CLASS);
     }else {
-        console.log("false");
-    }
+        GAME.boardElement.classList.add(GAME.X_CLASS);
+
+    } 
+    
+
 }
 
