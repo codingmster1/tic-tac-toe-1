@@ -1,12 +1,12 @@
 const X_CLASS ='x'; // Treecko
 const Y_CLASS ='y'; // Mudkip
-const Z_CLASS ='z'; // Torchic
+ 
 
 let GAME =
 {
     X_CLASS:"x",
     Y_CLASS:'y',
-    Z_CLASS:'z',
+    
 
     turn: undefined,
 
@@ -31,14 +31,14 @@ function Profile(){
             
             //console.log(e.target.dataset.id);
 
-            if (target == 'x' || target == 'y'){
-                GAME.X_CLASS = "x",
-                GAME.Y_CLASS = "y";
-                GAME.Y_CLASS="z";
+            if (target == 'x2' || target == 'y2'){
+                GAME.X_CLASS = "x2",
+                GAME.Y_CLASS = "y2";
+                
             }
 
 
-            GAME.turn = target == 'z'||target =='y'? true: false;
+            GAME.turn = target == 'y'||target =='y2'? true: false;
            
 
 

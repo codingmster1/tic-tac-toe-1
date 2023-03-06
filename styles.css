@@ -34,6 +34,7 @@
     --mudkip-img:url('mudkip-2.gif');
     --treeko-img:url('treecko4.jpg');
     --torchic-img:url('torchic.gif');
+    --pikachu-img:url('pikachu.gif');
 }
 
 #img 
@@ -147,7 +148,8 @@ body
 
 .block.x,
 .block.y,
-.block.x
+.block.x2,
+.block.y2
 {
     cursor: not-allowed;
 } 
@@ -163,25 +165,17 @@ body
 }
 
 
-.board.z .block:not(.z):not(.x):hover
+.board.x2 .block:not(.x2):not(.y2):hover
 {
     background:var(--torchic-img) no-repeat;   
 }
 
-.board.x .block:not(.x):not(.z):hover
+.board.y2 .block:not(.y2):not(.x2):hover
 {
-    background:var(--treeko-img) no-repeat;   
+    background:var(--pikachu-img) no-repeat;   
 }
 
-.board.y .block:not(.y):not(.z):hover
-{
-    background:var(--mudkip-img) no-repeat;   
-}
 
-.board.z .block:not(.z):not(.y):hover
-{
-    background:var(--torchic-img) no-repeat;   
-}
 
 
 
@@ -197,9 +191,15 @@ body
     background-size: cover;
 }
 
-.block.z
+.block.x2
 {
     background:var(--torchic-img) no-repeat;
+    background-size: cover;
+}
+
+.block.y2 
+{
+    background:var(--pikachu-img) no-repeat;
     background-size: cover;
 }
 
