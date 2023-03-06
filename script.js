@@ -8,8 +8,13 @@ const Z_CLASS ='z'; // Torchic
 function Profile(){
     let selectedProfile = document.querySelectorAll('.start-game .img .id');
     selectedProfile.forEach(img => {
-        console.log(img);
-    })
+        img.addEventListener("click", e => {
+
+            console.log(e.target.dataset.id);
+        });
+        
+        //
+    });
 }
 
 Profile()
