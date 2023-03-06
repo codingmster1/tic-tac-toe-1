@@ -20,3 +20,9 @@ function Profile(){
 }
 
 Profile()
+
+
+function removeImgSelection(img)
+{
+    
+}
