@@ -7,4 +7,9 @@ const Z_CLASS ='z'; // Torchic
 
 function Profile(){
     let selectedProfile = document.querySelectorAll('.start-game .img .id');
+    selectedProfile.forEach(img => {
+        console.log(img);
+    })
 }
+
+Profile()
