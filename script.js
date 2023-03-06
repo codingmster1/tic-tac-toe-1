@@ -53,6 +53,7 @@ Profile()
 function startGame(){
     /*console.log("Game Started");*/
     GAME.startWindow.classList.add("hide");
+    setHoverEffect();
 
 }
 
