@@ -11,7 +11,9 @@ function Profile(){
         img.addEventListener("click", e => {
 
             let target = e.target.dataset.id;
+            removeImgSelection(selectedProfile);
             document.querySelector(`[data-id='${target}']`).classList.add("selected");
+            
             console.log(e.target.dataset.id);
         });
         
@@ -24,5 +26,7 @@ Profile()
 
 function removeImgSelection(img)
 {
-    
+    [].forEach.call(img, function(el){
+        el.classList.remove("selected");
+    })
 }
