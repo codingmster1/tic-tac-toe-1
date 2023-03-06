@@ -230,3 +230,10 @@ body
 {
     display: flex;
 }
+
+.start-game .profile .img > img.selected
+{
+    background-color: var(--text-selected);
+    border: 2px solid var(--text-light);
+    border-radius: 20px;
+}
