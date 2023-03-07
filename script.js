@@ -3,9 +3,11 @@ const Y_CLASS ='y'; // Mudkip
  
 const WIN_COMBINATIONS =
 [
-    [
-        
-    ]
+    [0,1,2] //horizontal
+    [3,4,5],
+    [6,7,8],
+    [0,3,6], //vertical
+
 ]
 
 let GAME =
