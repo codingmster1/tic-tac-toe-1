@@ -98,3 +98,4 @@ function markCell(cell, currentClass)
     cell.classList.add(currentClass)
 }
 
+// swaps user turns
