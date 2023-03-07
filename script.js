@@ -53,9 +53,15 @@ GAME.startBtn.addEventListener("click", startGame);
 Profile()
 
 function startGame(){
+setHoverEffect();
     
-    setHoverEffect();
-    GAME.startWindow.classList.add("hide");
+GAME.blockElements.forEach(cell => {
+    console.log(cell)
+})
+
+
+
+GAME.startWindow.classList.add("hide");
     
 
 }
