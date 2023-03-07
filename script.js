@@ -53,9 +53,10 @@ GAME.startBtn.addEventListener("click", startGame);
 Profile()
 
 function startGame(){
-    /*console.log("Game Started");*/
-    GAME.startWindow.classList.add("hide");
+    
     setHoverEffect();
+    GAME.startWindow.classList.add("hide");
+    
 
 }
 
@@ -70,15 +71,10 @@ function removeImgSelection(img)
 function setHoverEffect(){
 GAME.boardElement.classList.remove(GAME.X_CLASS);
 GAME.boardElement.classList.remove(GAME.Y_CLASS);
-
-
-
-
     if(GAME.turn){
         GAME.boardElement.classList.add(GAME.Y_CLASS);
     }else {
         GAME.boardElement.classList.add(GAME.X_CLASS);
-
     } 
     
 
