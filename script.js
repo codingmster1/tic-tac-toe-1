@@ -1,6 +1,12 @@
 const X_CLASS ='x'; // Treecko
 const Y_CLASS ='y'; // Mudkip
  
+const WIN_COMBINATIONS =
+[
+    [
+        
+    ]
+]
 
 let GAME =
 {
@@ -74,6 +80,7 @@ function handleClick(e)
     markCell(cell, currentClass);
 
     GAME.turn = swapTurns(GAME.turn);
+    setHoverEffect();
 }
 
 function removeImgSelection(img)
@@ -105,3 +112,4 @@ function swapTurns(turns)
 {
     return turns = !turns;
 }
+
