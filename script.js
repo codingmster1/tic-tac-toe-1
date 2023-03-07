@@ -71,7 +71,7 @@ function handleClick(e)
 {
     const cell = e.target;
     const currentClass = GAME.turn ? GAME.Y_CLASS : GAME.X_CLASS;
-    console.log(currentClass);
+    markCell(cell, currentClass);
 }
 
 function removeImgSelection(img)
@@ -90,6 +90,11 @@ GAME.boardElement.classList.remove(GAME.Y_CLASS);
         GAME.boardElement.classList.add(GAME.X_CLASS);
     } 
     
+}
 
+// current user in cell
+function markCell(cell, currentClass)
+{
+    cell.classList.add(currentClass)
 }
 
