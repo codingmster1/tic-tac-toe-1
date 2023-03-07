@@ -55,17 +55,24 @@ Profile()
 function startGame(){
 setHoverEffect();
     
+    //Click Event on each cell
 GAME.blockElements.forEach(cell => {
-    console.log(cell)
+    cell.addEventListener('click', handleClick, { once: true })
 })
 
 
 
 GAME.startWindow.classList.add("hide");
     
-
 }
 
+// operates x and y logic with click 
+function handleClick(e)
+{
+    const cell = e.target;
+    const currentClass = GAME.turn ? GAME.Y_CLASS : GAME.X_CLASS;
+    console.log(currentClass);
+}
 
 function removeImgSelection(img)
 {
