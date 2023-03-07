@@ -72,6 +72,8 @@ function handleClick(e)
     const cell = e.target;
     const currentClass = GAME.turn ? GAME.Y_CLASS : GAME.X_CLASS;
     markCell(cell, currentClass);
+
+    GAME.turn = swapTurns(GAME.turn);
 }
 
 function removeImgSelection(img)
@@ -99,3 +101,7 @@ function markCell(cell, currentClass)
 }
 
 // swaps user turns
+function swapTurns(turns)
+{
+    return turns = !turns;
+}
