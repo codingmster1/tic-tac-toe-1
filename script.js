@@ -111,7 +111,8 @@ function handleClick(e)
     if (win){
         
         GAME.winner = GAME.blockElements[WIN_COMBINATIONS[index][0]];
-        console.log(GAME.winner);
+        return win !== false;
+        //console.log(GAME.winner);
         
         
         
