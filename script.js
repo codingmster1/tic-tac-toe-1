@@ -114,7 +114,7 @@ function handleClick(e)
         return win !== false;
         //console.log(GAME.winner);
         
-        
+        /* -------- Add background to winner ---------*/
         
         
         //console.log("Win")
@@ -124,7 +124,7 @@ function handleClick(e)
     });
     //console.log(flag);
 
-    //check for win or draw
+    /*-------------- check for win or draw -----------*/
 
     if(flag.length){
         console.log("win");
