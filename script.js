@@ -122,7 +122,16 @@ function handleClick(e)
     }
 
     });
-    console.log(flag);
+    //console.log(flag);
+
+    //check for win or draw
+
+    if(flag.length){
+        console.log("win");
+    }else {
+        console.log("draw");
+    }
+
 
     GAME.turn = swapTurns(GAME.turn);
     setHoverEffect();
