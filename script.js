@@ -1,17 +1,39 @@
 const X_CLASS ='x'; // Treecko
 const Y_CLASS ='y'; // Mudkip
  
+
+/*------------------ Win Logic ----------------*/
 const WIN_COMBINATIONS =
 [
-    [0,1,2] //horizontal
+    [0,1,2], //horizontal
     [3,4,5],
     [6,7,8],
     [0,3,6], //vertical
     [1,4,7],
-    
+    [2,5,8],
+    [0,4,8], //diagonal
+    [2,4,8]
 
-]
+];
 
+function checkWin(currentClass, blockElements)
+{
+    let winMatch = [];
+
+    WIN_COMBINATIONS.some(combination => {
+        winMatch.push(combination.every(index => {
+
+            return blockElements[index].classList.contains(currentClass);
+            /*return index;*/
+        }));
+    })
+
+    //console.log(winMatch);
+    return winMatch || null;
+}
+
+
+/* ------------------ End of Win Logic --------------- */
 let GAME =
 {
     X_CLASS:"x",
@@ -22,6 +44,7 @@ let GAME =
 
     selectedProfile: document.querySelectorAll(".img .id"),
     blockElements: document.querySelectorAll('[data-cell]'),
+    winner: null,
     boardElement: document.getElementById("board"),
     startBtn: document.getElementById("startBtn"),
     startWindow: document.querySelector(".start-game"),
@@ -83,9 +106,29 @@ function handleClick(e)
     const currentClass = GAME.turn ? GAME.Y_CLASS : GAME.X_CLASS;
     markCell(cell, currentClass);
 
+    /* check winner */
+    let flag = checkWin(currentClass, GAME.blockElements).filter((win, index) => {
+    if (win){
+        
+        GAME.winner = GAME.blockElements[WIN_COMBINATIONS[index][0]];
+        console.log(GAME.winner);
+        
+        
+        
+        
+        //console.log("Win")
+        //console.log(index)
+    }
+
+    });
+    console.log(flag);
+
     GAME.turn = swapTurns(GAME.turn);
     setHoverEffect();
 }
+
+
+
 
 function removeImgSelection(img)
 {
