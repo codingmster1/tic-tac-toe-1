@@ -110,11 +110,17 @@ function handleClick(e)
     let flag = checkWin(currentClass, GAME.blockElements).filter((win, index) => {
     if (win){
         
+        /* -------- Add background to winner ---------*/
+        WIN_COMBINATIONS[index].map(i => {
+        GAME.blockElements[i].classList.add('win');
+        })
+        
+        
         GAME.winner = GAME.blockElements[WIN_COMBINATIONS[index][0]];
         return win !== false;
         //console.log(GAME.winner);
         
-        /* -------- Add background to winner ---------*/
+        
         
         
         //console.log("Win")
