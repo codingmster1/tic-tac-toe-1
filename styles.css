@@ -240,5 +240,5 @@ body
 
 .win
 {
-    background-color:var(--text-selected);
+    background-color:var(--text-selected) !important;
 }
