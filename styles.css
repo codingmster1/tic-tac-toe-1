@@ -237,3 +237,8 @@ body
     border: 2px solid var(--text-light);
     border-radius: 20px;
 }
+
+.win
+{
+    background-color:var(--text-selected);
+}
