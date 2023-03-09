@@ -209,7 +209,6 @@ body
 .start-game, .draw-msg, .winner-msg
 {
     color:rgb(224, 132, 119);
-    
     font-size: 70px;
     position:fixed;
     top: 0;

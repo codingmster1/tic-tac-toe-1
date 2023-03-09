@@ -173,6 +173,16 @@ function markCell(cell, currentClass)
 // swaps user turns
 function swapTurns(turns)
 {
-    return turns = !turns;
+    return turns =!turns;
+}
+
+function endGame(draw, winEl, DrawEl)
+{
+    if(!draw){
+    winEl.classList.add("show");
+    } else {
+    drawEl.classList.add("show");
+    
+    }
 }
 
