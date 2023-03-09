@@ -208,7 +208,9 @@ body
 
 .start-game, .draw-msg, .winner-msg
 {
-    font-size: 30px;
+    color:rgb(224, 132, 119);
+    
+    font-size: 70px;
     position:fixed;
     top: 0;
     left: 0;
@@ -232,6 +234,7 @@ body
 .draw-msg.show, .winner-msg.show
 {
     display: flex;
+    
 }
 
 .start-game .profile .img > img.selected
