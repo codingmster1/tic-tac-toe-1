@@ -50,7 +50,7 @@ let GAME =
     startWindow: document.querySelector(".start-game"),
     winEl: document.querySelector(".winner-msg"),
     drawEl: document.querySelector(".draw-msg"),
-    winnerImg: document.querySelector(".winner-msg .winner")
+    winnerImg: document.querySelector(".winner-msg .winner"),
 
 }
 
@@ -119,7 +119,7 @@ function handleClick(e)
         })
         
         
-        GAME.winner = GAME.blockElements[WIN_COMBINATIONS[index][0]].cloneNode[true];
+        GAME.winner = GAME.blockElements[WIN_COMBINATIONS[index][0]].cloneNode(true);
         return win !== false;
         //console.log(GAME.winner);
         
@@ -180,7 +180,7 @@ function swapTurns(turns)
     return turns =!turns;
 }
 
-function endGame(draw, winEl, DrawEl)
+function endGame(draw, winEl, drawEl)
 {
     if(!draw){
     winEl.classList.add("show");
