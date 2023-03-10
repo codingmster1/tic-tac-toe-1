@@ -119,7 +119,7 @@ function handleClick(e)
         })
         
         
-        GAME.winner = GAME.blockElements[WIN_COMBINATIONS[index][0]];
+        GAME.winner = GAME.blockElements[WIN_COMBINATIONS[index][0]].cloneNode[true];
         return win !== false;
         //console.log(GAME.winner);
         
