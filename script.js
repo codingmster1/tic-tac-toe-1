@@ -48,6 +48,9 @@ let GAME =
     boardElement: document.getElementById("board"),
     startBtn: document.getElementById("startBtn"),
     startWindow: document.querySelector(".start-game"),
+    winEl: document.querySelector(".winner-msg"),
+    drawEl: document.querySelector(".draw-msg"),
+    winnerImg: document.querySelector(".winner-msg .winner")
 
 }
 
@@ -133,7 +136,8 @@ function handleClick(e)
     /*-------------- check for win or draw -----------*/
 
     if(flag.length){
-        console.log("win");
+        endGame(false, GAME.winEl, GAME.drawEl);
+        GAME.winnerImg.append(GAME.winner);
     }else {
         console.log("draw");
     }
