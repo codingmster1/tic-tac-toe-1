@@ -206,7 +206,7 @@ body
 
 /*-------- Draw Message ---------*/
 
-.start-game, .draw-msg /*.winner-msg*/
+.start-game 
 {
     color:rgb(224, 132, 119);
     font-size: 70px;
@@ -244,7 +244,22 @@ body
     background-size:cover;
 }
 
-
+.draw-msg
+{
+    background: url('playagain.gif');
+    color:rgb(12, 12, 11);
+    font-size: 70px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size:cover;
+}
 
 .draw-msg, .winner-msg
 {
