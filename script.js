@@ -67,7 +67,7 @@ function Profile(){
             removeImgSelection(GAME.selectedProfile);
             document.querySelector(`[data-id='${target}']`).classList.add("selected");
             
-            //console.log(e.target.dataset.id);
+            
 
             if (target == 'x2' || target == 'y2'){
                 GAME.X_CLASS = "x2",
@@ -132,17 +132,11 @@ function handleClick(e)
         
         GAME.winner = GAME.blockElements[WIN_COMBINATIONS[index][0]].cloneNode(true);
         return win !== false;
-        //console.log(GAME.winner);
         
-        
-        
-        
-        //console.log("Win")
-        //console.log(index)
     }
 
     });
-    //console.log(flag);
+    
 
     /*-------------- check for win or draw -----------*/
 
