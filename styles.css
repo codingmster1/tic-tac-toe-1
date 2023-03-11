@@ -206,7 +206,7 @@ body
 
 /*-------- Draw Message ---------*/
 
-.start-game /*.draw-msg, .winner-msg*/
+.start-game, .draw-msg /*.winner-msg*/
 {
     color:rgb(224, 132, 119);
     font-size: 70px;
@@ -241,6 +241,8 @@ body
     align-items: center;
     background-size:cover;
 }
+
+
 
 .draw-msg, .winner-msg
 {

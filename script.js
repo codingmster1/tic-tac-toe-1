@@ -51,6 +51,7 @@ let GAME =
     winEl: document.querySelector(".winner-msg"),
     drawEl: document.querySelector(".draw-msg"),
     winnerImg: document.querySelector(".winner-msg .winner"),
+    restartBtn: document.getElementById("restartBtn"),
 
 }
 
@@ -85,6 +86,7 @@ function Profile(){
 }
 
 GAME.startBtn.addEventListener("click", startGame);
+GAME.restartBtn.addEventListener("click", startGame);
 
 Profile()
 
@@ -93,12 +95,17 @@ setHoverEffect();
     
     //Click Event on each cell
 GAME.blockElements.forEach(cell => {
+    cell.classList.remove(GAME.X_CLASS);
+    cell.classList.remove(GAME.Y_CLASS);
+    cell.classList.remove("win");
     cell.addEventListener('click', handleClick, { once: true })
 })
 
 
 
 GAME.startWindow.classList.add("hide");
+GAME.winEl.classList.remove("show");
+GAME.winnerImg.children.length ? GAME.winnerImg.removeChild(GAME.winner): null;
     
 }
 
