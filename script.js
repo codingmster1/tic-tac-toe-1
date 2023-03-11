@@ -197,3 +197,9 @@ function endGame(draw, winEl, drawEl)
     }
 }
 
+/* ------ check for draw result -------- */
+
+function isDraw(flag)
+{
+    
+}
