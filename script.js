@@ -145,8 +145,8 @@ function handleClick(e)
     if(flag.length){
         endGame(false, GAME.winEl, GAME.drawEl);
         GAME.winnerImg.append(GAME.winner);
-    }else {
-        console.log("draw");
+    }else if (isDraw(flag)){
+        endGame(true, GAME.winEl, GAME.drawEl);
     }
 
 
@@ -201,5 +201,9 @@ function endGame(draw, winEl, drawEl)
 
 function isDraw(flag)
 {
-    
+    if(flag.length) return;
+    return [...GAME.blockElements].every(cell => {
+       return cell.classList.contains(GAME.X_CLASS) ||
+        cell.classList.contains(GAME.Y_CLASS)
+    })
 }
