@@ -52,6 +52,7 @@ let GAME =
     drawEl: document.querySelector(".draw-msg"),
     winnerImg: document.querySelector(".winner-msg .winner"),
     restartBtn: document.getElementById("restartBtn"),
+    drawBtn: document.getElementById("drawBtn"),
 
 }
 
@@ -87,6 +88,7 @@ function Profile(){
 
 GAME.startBtn.addEventListener("click", startGame);
 GAME.restartBtn.addEventListener("click", startGame);
+GAME.drawBtn.addEventListener("click", startGame);
 
 Profile()
 
@@ -98,6 +100,7 @@ GAME.blockElements.forEach(cell => {
     cell.classList.remove(GAME.X_CLASS);
     cell.classList.remove(GAME.Y_CLASS);
     cell.classList.remove("win");
+    cell.removeEventListener("click", handleClick);
     cell.addEventListener('click', handleClick, { once: true })
 })
 
@@ -105,6 +108,7 @@ GAME.blockElements.forEach(cell => {
 
 GAME.startWindow.classList.add("hide");
 GAME.winEl.classList.remove("show");
+GAME.drawEl.classList.remove("show");
 GAME.winnerImg.children.length ? GAME.winnerImg.removeChild(GAME.winner): null;
     
 }
